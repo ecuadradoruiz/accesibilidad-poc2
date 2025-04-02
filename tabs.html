@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de Tabs</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Página con tabs</h1>
+    </header>    
+    <main>
+      <button class="btn-back" onclick="window.history.back();">Volver</button>
+      <h2>Ejemplo de Tabs</h1>
+      <div class="tabs" role="tablist">
+        <ul class="tab-list">
+          <li>
+            <button
+              id="tab-1"
+              role="tab"
+              aria-controls="panel-1"
+              aria-selected="true"
+            >
+              Tab 1
+            </button>
+          </li>
+          <li>
+            <button
+              id="tab-2"
+              role="tab"
+              aria-controls="panel-2"
+              aria-selected="false"
+            >
+              Tab 2
+            </button>
+          </li>
+          <li>
+            <button
+              id="tab-3"
+              role="tab"
+              aria-controls="panel-3"
+              aria-selected="false"
+            >
+              Tab 3
+            </button>
+          </li>
+        </ul>
+        <div
+          id="panel-1"
+          class="tab-panel"
+          role="tabpanel"
+          aria-labelledby="tab-1"
+          aria-hidden="false"
+        >
+          <p>Contenido de la pestaña 1.</p>
+        </div>
+        <div
+          id="panel-2"
+          class="tab-panel"
+          role="tabpanel"
+          aria-labelledby="tab-2"
+          aria-hidden="true"
+        >
+          <p>Contenido de la pestaña 2.</p>
+        </div>
+        <div
+          id="panel-3"
+          class="tab-panel"
+          role="tabpanel"
+          aria-labelledby="tab-3"
+          aria-hidden="true"
+        >
+          <p>Contenido de la pestaña 3.</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 Demo webview</p>
+    </footer>
+    <script src="js/tabs.js"></script>
+  </body>
+</html>
