@@ -13,7 +13,7 @@
     <main>
       <button class="btn-back" onclick="window.history.back();">Volver</button>
       <h2>Ejemplo de Tabs</h1>
-      <div class="tabs" role="tablist">
+      <div class="tabs" role="tablist" aria-label="Pestañas (3 elementos)">
         <ul class="tab-list">
           <li>
             <button
@@ -23,6 +23,7 @@
               aria-selected="true"
               aria-posinset="1"
               aria-setsize="3"
+              aria-label="Tab 1 (1 de 3)"
             >
               Tab 1
             </button>
@@ -35,6 +36,7 @@
               aria-selected="false"
               aria-posinset="2"
               aria-setsize="3"
+              aria-label="Tab 2 (2 de 3)"
             >
               Tab 2
             </button>
@@ -47,6 +49,7 @@
               aria-selected="false"
               aria-posinset="3"
               aria-setsize="3"
+              aria-label="Tab 3 (3 de 3)"
             >
               Tab 3
             </button>
